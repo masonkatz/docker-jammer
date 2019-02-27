@@ -8,7 +8,7 @@ echo
 echo
 echo
 
-connect="autossh -M 0 -N -oStrictHostKeyChecking=no -R{JAMBOX_PORT}:localhost:${JAMMER_PORT} ${JAMBOX_USER}@${JAMBOX_HOST}"
+connect="autossh -M 0 -N -oStrictHostKeyChecking=no -R${JAMBOX_PORT}:localhost:${JAMMER_PORT} ${JAMBOX_USER}@${JAMBOX_HOST}"
 
 socat tcp-listen:${JAMMER_PORT},fork tcp:host.docker.internal:22 &
 

@@ -14,3 +14,4 @@ services:
     volumes:
       - ${HOME}/.ssh/jammer_rsa:/home/user/.ssh/id_rsa:ro
       - ${HOME}/.ssh/jammer_rsa.pub:/home/user/.ssh/id_rsa.pub:ro
+    restart: always
