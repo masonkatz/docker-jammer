@@ -14,6 +14,9 @@ Create a `.env` file in this directory to describe the jambox host and account.
 	JAMBOX_USER=<username>
 	JAMBOX_HOST=<hostname>
 	
+See the docker-compose.yaml for other environment variables that have
+predefined defaults (e.g. JAMBOX_PORT).
+	
 Copy the above public key onto the jambox.
 
 	source .env
